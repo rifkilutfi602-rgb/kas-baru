@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard - KasKita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    badra ganteng
-    hilmi ganteng
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2><i class="fa-solid fa-wallet"></i> KasKita</h2>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="iuran.html"><i class="fa-solid fa-users"></i> Status Iuran</a></li>
+                <li><a href="tambah.html"><i class="fa-solid fa-circle-plus"></i> Input Kas</a></li>
+                <li><a href="laporan.html"><i class="fa-solid fa-file-lines"></i> Laporan</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h3>Dashboard Keuangan Kelas</h3>
+                <span class="user-badge"><i class="fa-solid fa-user-shield"></i> Bendahara</span>
+            </header>
+
+            <section>
+                <h2>Ringkasan Keuangan</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <p>Total Kas Masuk</p>
+                        <h3>Rp 1.250.000</h3>
+                    </div>
+                    <div class="card">
+                        <p>Total Pengeluaran</p>
+                        <h3>Rp 350.000</h3>
+                    </div>
+                    <div class="card">
+                        <p>Saldo Kas Saat Ini</p>
+                        <h3 class="success">Rp 900.000</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

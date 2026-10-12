@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan - KasKita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2><i class="fa-solid fa-wallet"></i> KasKita</h2>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="iuran.html"><i class="fa-solid fa-users"></i> Status Iuran</a></li>
+                <li><a href="tambah.html"><i class="fa-solid fa-circle-plus"></i> Input Kas</a></li>
+                <li><a href="laporan.html" class="active"><i class="fa-solid fa-file-lines"></i> Laporan</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h3>Riwayat Laporan Keuangan</h3>
+                <span class="user-badge"><i class="fa-solid fa-user-shield"></i> Bendahara</span>
+            </header>
+
+            <section>
+                <h2>Histori Transaksi Kas Kelas</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Keterangan</th>
+                                <th>Jenis</th>
+                                <th>Nominal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01 Okt 2026</td>
+                                <td>Iuran Warga Minggu ke-1</td>
+                                <td><span class="badge lunas">Masuk</span></td>
+                                <td>Rp 500.000</td>
+                            </tr>
+                            <tr>
+                                <td>05 Okt 2026</td>
+                                <td>Beli Spidol & Penghapus Papan</td>
+                                <td><span class="badge pending">Keluar</span></td>
+                                <td>Rp 35.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
